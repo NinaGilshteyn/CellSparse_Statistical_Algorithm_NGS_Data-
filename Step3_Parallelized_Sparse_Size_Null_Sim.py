@@ -1,3 +1,13 @@
+
+
+#**Author:** Nina Gilshteyn, M.S.
+#**Affiliation:** Deeds Lab, UCLA — Department of Integrative Biology & Physiology
+#**Status:** Manuscript in preparation — *"The Biology is in The Tails: Skewness and Upregulation in scRNA-seq >
+#**Profile:** [ninagilshteyn.github.io](https://ninagilshteyn.github.io) · [github.com/NinaGilshteyn](https://g>
+
+
+
+
 import pandas as pd
 import numpy as np
 import multiprocessing

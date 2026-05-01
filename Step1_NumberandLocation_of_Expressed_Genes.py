@@ -1,14 +1,23 @@
+
+
+#**Author:** Nina Gilshteyn, M.S.
+#**Affiliation:** Deeds Lab, UCLA — Department of Integrative Biology & Physiology
+#**Status:** Manuscript in preparation — *"The Biology is in The Tails: Skewness and Upregulation in scRNA-seq D>
+#**Profile:** [ninagilshteyn.github.io](https://ninagilshteyn.github.io) · [github.com/NinaGilshteyn](https://gi>
+
+
 import pandas as pd
 import numpy as np
 
-#df = pd.read_csv('S1R1.csv', index_col=0, header=0)
-#df = pd.read_csv('dummy.csv', index_col = 0, header = 0)
 
 df = pd.read_csv('cd56NKcellsdf_len8385.csv', header = 0, index_col =0)
 print('df pretranspose', df.head(3))
 
 df = df.drop('labels', axis = 1)
 print('df pretranspose', df.head(3))
+
+
+
 df = df.T  #transpose df so that cells are the columns and genes are the rows 
 print("df post transpose", df.shape, df.head(3))
 
