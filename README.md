@@ -2,7 +2,7 @@
 
 **Author:** Nina Gilshteyn, M.S.  
 **Affiliation:** Deeds Lab, UCLA — Department of Integrative Biology & Physiology  
-**Status:** Manuscript in preparation — *"The Biology is in The Tails: Skewness and Upregulation in scRNA-seq Data"*  
+**Status:** Manuscript in preparation — *"The Biology is in The Tails: Skewness and Upregulation in scRNA-seq Data"* which is based off of my Master's thesis: Gilshteyn, N. (2024). The Biology is in The Tails: Skewness and Upregulation in scRNA-seq. UCLA. ProQuest ID: Gilshteyn_ucla_0031N_23577. Merritt ID: ark:/13030/m5b96p3g. Retrieved from https://escholarship.org/uc/item/8p46s4ck  
 **Profile:** [ninagilshteyn.github.io](https://ninagilshteyn.github.io) · [github.com/NinaGilshteyn](https://github.com/NinaGilshteyn)
 
 ---
