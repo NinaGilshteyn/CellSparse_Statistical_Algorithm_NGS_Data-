@@ -11,7 +11,7 @@
 
 CellSparse is a parallelized statistical algorithm for identifying upregulated genes in single-cell RNA sequencing (scRNA-seq) data. Rather than relying on conventional differential expression methods, CellSparse uses a **sparse null simulation approach** grounded in the distributional properties of scRNA-seq count data — specifically, the skewness between the mean and median of gene expression distributions.
 
-The core insight is that in sparse scRNA-seq data, a gene's expression distribution is right-skewed when it is genuinely upregulated. CellSparse models this by simulating a null distribution of mean–median weights under the assumption that transcript deposition is random across expressed gene locations, then computes empirical two-sided p-values for each gene against that null.
+The CellSparse algorithm tests the null hypothesis that outliers cells in a gene's histogram are caused by cells that are generally more transcriptionally active or 'heavy'. This algorithm simulated this question by randomly redistributing each cell's total counts to it's endogenously expressed genes. This test is appropriate for the question because heavier cells would have a higher chance of increasing the amount of counts for a gene; thus, the histogram for said gene would become right skewed by random chance. We ran 20,000 simulations using the Hoffman2 Cluster and check how many genes have significantly large weights relative to this null hypothesis. 
 
 The pipeline is designed to run on an HPC cluster and leverages Python's `multiprocessing` library to parallelize null simulations across CPUs — enabling large-scale in-silico gene simulations that would otherwise be RAM-constrained.
 
